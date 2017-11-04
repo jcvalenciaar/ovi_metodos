@@ -9,46 +9,12 @@ font-family: 'Baloo Tammudu', cursive;
 	position: relative;
   /*background: gray;*/
 }
-img.imgLogo{
-	width: 347px;
-	height: 75px;
-	
-}
-
-img.imgFoto{
-	width: 150px;
-	height: 150px;
-	display:block;
-	margin:auto;
-	
-}
-img.imgOrdenar{
-	width: 90%;
-	height: 90%;
-	display:block;
-	margin:auto;
-}
-
-img.imgOrdenar:hover{ 
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5)
-}
-img.contador{
-	width: 100px;
-	height: 50px;
-	background: #005883;
-	border-radius: 10px;
-	alignment-adjust: after-edge;
-	float:right;
-	margin-right:20px;
-}
 #logogris{
 	width: 225;
 	height: 41;
 	margin: auto;
 	float: left;
 	position: static;
-  /*background: gray;*/
 }
 
 #topderecho{
@@ -63,13 +29,32 @@ img.contador{
 	width: 700px;
 	float:right;
 	background: rgba(255,255,255,3,5);
-  
 }
+
 /*Etiquetas*/
+aside{
+	width: 350px;
+	background: white;
+	height: 450px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
 body{
   background-repeat: no-repeat;
   background-size: cover;
 } 
+footer{
+	width: 1100px;
+	height: 80px;
+	background: black;
+	float: left;
+	margin-top: 10px;
+	text-align: left;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
 h1{
 	font-family: "Franklin Gothic Heavy", "Franklin Gothic Book";
 	color: white;
@@ -100,23 +85,42 @@ h3{
 }
 header{
 	width: 1100px;
-	height: 133px;
+	height: 125px;
 	background: rgba(255,255,255,3,5);
   
 }
-nav{
-	width: 1100px;
-	height: 70px;
+header_texto {
+	font-family: "Franklin Gothic Heavy", "Franklin Gothic Book";
+}
+img.imgLogo{
+	width: 347px;
+	height: 75px;
+}
+
+img.imgFoto{
+	width: 150px;
+	height: 150px;
+	display:block;
+	margin:auto;
+}
+img.imgOrdenar{
+	width: 90%;
+	height: 90%;
+	display:block;
+	margin:auto;
+}
+img.imgOrdenar:hover{ 
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5)
+}
+img.contador{
+	width: 100px;
+	height: 50px;
 	background: #005883;
 	border-radius: 10px;
 	alignment-adjust: after-edge;
-}
-
-ul{
-	margin: auto;
-	
-	padding-top: 4px;
-	margin-top: 10px;
+	float:right;
+	margin-right:20px;
 }
 li{
 	/*formato de menu */
@@ -129,48 +133,20 @@ li{
 	border-radius: 15px 15px 0 0;
 	box-shadow: 0  0 10px white inset;
 	text-align: center;
-	
+	color:white; 
+	text-decoration: none;
 }
-li.menu{
+li.activo{
 	/*formato de menu */
 	background: #F47920;
 	border-radius: 15px 15px 0 0;
 }
-
-
-section{
-	width: 350px;
-	background: #dfdfdf;
-	height: 450px;
-	float: left;
-	border-radius: 10px;
-	margin-top: 20px;
-	margin-left: 10px;
-}
-aside{
-	width: 350px;
-	background: white;
-	height: 450px;
-	float: left;
-	margin-left: 20px;
-	margin-top: 20px;
-	border-radius: 10px;
-}
-.twitter-timeline{
-	width:50%;
-	height: 50%;
-	float: center;
-	border-radius: 10px;
-}
-footer{
+nav{
 	width: 1100px;
-	height: 80px;
-	background: black;
-	float: left;
-	margin-top: 20px;
-	text-align: left;
-	margin-bottom: 20px;
+	height: 70px;
+	background: #005883;
 	border-radius: 10px;
+	alignment-adjust: after-edge;
 }
 p{
   font-size:15px;
@@ -189,6 +165,21 @@ p.textoTeoria{
 	padding: 1px;
 	text-align: justify;
 }
+section{
+	width: 350px;
+	background: #dfdfdf;
+	height: 450px;
+	float: left;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+ul{
+	margin: auto;
+	padding-top: 4px;
+	margin-top: 5px;
+}
+
 /* Definimos las Clases */
 .ancho_menu_home{width: 700px;}
 .ancho_menu_paginas{width: 750px;}
@@ -199,16 +190,6 @@ p.textoTeoria{
 	color: #005883;
 	text-decoration: none;
 	text-shadow: 0 0 13px white;
- 	
- }
-.menu:active{
-	color: #005883;
-	text-decoration: none;
-	
-}
-
-header_texto {
-	font-family: "Franklin Gothic Heavy", "Franklin Gothic Book";
 }
 .footLogo {
 	margin-top: 5px;
@@ -216,7 +197,6 @@ header_texto {
 	padding-left: 1.45%;
 	float: left;
 	text-align: left;
-
 }
 .footTexto {
     width: 30%;
@@ -225,7 +205,6 @@ header_texto {
     font-size: 12px;
     text-align: left;
     line-height: 14px;
-
 }
 .footContacto {
     margin-left: auto;
@@ -236,4 +215,10 @@ header_texto {
     color: #FFF;
     text-align: left;
 	font-size:9px;
+}
+.twitter-timeline{
+	width:50%;
+	height: 50%;
+	float: center;
+	border-radius: 10px;
 }

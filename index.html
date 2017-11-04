@@ -5,65 +5,61 @@
 <head>
 	<meta charset="UTF-8">
 	<meta content="Juan Carlos Valencia" name="author"/>
-	<meta content="Primera Pagina de Curso Diseño de Sitios Web" name="description"/>
-	<meta content="diseño, web, introduccion" name="keywords"/>
+	<meta content="Ovi sobre Métodos de Ordenamiento" name="description"/>
+	<meta content="Métodos de Ordenamiento, ordenamiento, burbuja, inserción, selección" name="keywords"/>
 	<title>OVI Metodos de Ordenación </title>
 
 	<!-- Define Estilo-->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu|Indie+Flower" rel="stylesheet">
-
-
 </head>
 <body>
-	
-<DIV id="contenidos">
+	<!-- Librerias interaccion-->	
+	<script src="js/modernizr.js"></script>
+	<script src="js/prefixfree.min.js"></script>
+	<script src="js/jquery-3.2.1.js"></script>
+    <div id="textDiv"></div>  
+
+    <script type="text/javascript">
+    	$(function() {
+       		$('.menu li a').click(function(e) {
+	       		e.preventDefault();
+           		var $this = $(this);
+	       		$this.closest('ul').children('li').removeClass('activo');
+           		$this.parent().addClass('activo');
+				
+       		});
+	  	});
+		function abreIframe (URL){ 
+			window.open(URL, target="ventana_iframe") 
+		};
+   	</script>
+	<DIV id="contenidos">
 		<header>
 	      <h1>
 	          Metodos de Ordenación con programación Orientada a Objetos
           </h1>
           <img class="imgLogo" src="img/logoUNAD.png" alt="Universidad Abierta y a Distancia"  >
 	    </header>
-	<nav>
-		<ul class="menu">
-			<li class="menu"><a href="./index.html" class="menu">Inicio</a></li>
-			<li><a href="./burbuja.html" class="menu">Burbuja</a></li>
-			<li><a href="./seleccion.html" class="menu">Selección</a></li>
-            <li><a href="./insercion.html" class="menu">Inserción</a></li>
-            <li><a href="./autores.html" class="menu">Autores</a></li>
-   	  </ul>
-         <div align="center">
-    		<a href="https://www.contadorvisitasgratis.com" title="contador de visitas blog"><img class="contador" src="https://counter8.freecounter.ovh/private/contadorvisitasgratis.php?c=1qh3u9zz5kexkyc7q979c1qw4tbu392w" border="0" title="contador de visitas blog" alt="contador de visitas blog">
-            </a>
-		</div>
-	</nav>
-	<section>
-		<article >
-		  <h2>Objetivo</h2>
-		  <p class="textoTeoria">El objetivo de este  OVI es brindar una correcta descripción acerca de los métodos de ordenación y  su importancia en la programación orientada a objetos.      </p>
-          <img  class="imgOrdenar" src="img/ordenar.png" alt="¿Ordenar?"  align="center" >
-	  </article>
-	</section>
-	<section>
-	  <article>
-	    <h2>¿Porque  se debe organizar?</h2>
-		  <p class="textoTeoria">Cuando almacenamos los datos en una estructura ya sea en un vector, tabla, matriz o cualquier otra; por lo general el ingreso de la información no tiene ningún orden. </p>
-        <p class="textoTeoria">Al momento de buscar algún dato tendríamos que recorrer a veces toda la estructura para encontrarlo, por esto es necesario tener la información ordenada. </p>
-        <p class="textoTeoria">Existen métodos sencillos donde comparamos cada elemento con los demás, así si nuestra estructura tiene 50 elementos  haremos 2500 comparaciones (50 x 50)</p>
-        <p class="textoTeoria">Se dice que un método es más eficiente que otro midiendo las comparaciones e intercambios que realiza para ordenar la estructura. </p>
-        <p class="textoTeoria">Entre los métodos de ordenación  hay tres que sobresalen por su eficiencia y simpleza al momento de  ordenar y  estructurar:
-          Método de  Burbuja, Método de Inserción y Método de Selección.</p>
-            <p class="textoTeoria">&nbsp;</p>
-	  </article></section>
-      <aside>
-		<center>
-			<a class="twitter-timeline" data-width="400" data-height="450" href=				"https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-   </center>
-</aside>
+		<nav>
+			<ul class="menu">
+				<li class='activo'><a onClick="abreIframe('./inicio.html');" class="menu" target="ventana_iframe">Inicio</a></li>
+				<li><a onClick="abreIframe('./burbuja.html');" class="menu" target="ventana_iframe">Burbuja</a></li>
+				<li><a onClick="abreIframe('./seleccion.html');" class="menu" target="ventana_iframe">Selección</a></li>
+            	<li><a onClick="abreIframe('./insercion.html');" class="menu" target="ventana_iframe">Inserción</a></li>
+            	<li><a onClick="abreIframe('./autores.html');" class="menu" target="ventana_iframe">Autores</a></li>
+            	
+   	  		</ul>
+         	<div align="center">
+    			<a href="https://www.contadorvisitasgratis.com" title="contador de visitas blog"><img class="contador" src="https://counter8.freecounter.ovh/private/contadorvisitasgratis.php?c=1qh3u9zz5kexkyc7q979c1qw4tbu392w" border="0" title="contador de visitas blog" alt="contador de visitas blog">
+            	</a>
+			</div>
+		</nav>
+	
+    	<iframe width="1100px" height="480px" src="./inicio.html"  name="ventana_iframe" frameborder="0" marginwidth="0" marginheight="0" border="0" scrolling="no" ></iframe>
   
-  <footer class="footContacto">
+  		<footer class="footContacto">
 		<div class="footLogo"><img class="imgOrdenar" alt="Universidad Nacional Abierta y a Distancia" src="img/logoUNADgrisInferior.png"></div>
         <div class="footTexto">Sede nacional José Celestino Mutis: Calle 14 sur No. 14 - 23<br>  
 		PBX:(+57) 1 344 3700 Bogotá D.C., Colombia<br>
@@ -79,11 +75,6 @@
         
 	</footer>
 	</DIV>
-
-	<!-- Librerias interaccion-->	
-	<script src="js/modernizr.js"></script>
-	<script src="js/prefixfree.min.js"></script>
-	<script src="js/jquery-3.2.1.js"></script>
 </body>
 </html>
 
