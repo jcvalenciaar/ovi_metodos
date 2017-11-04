@@ -1,0 +1,240 @@
+/*
+font-family: 'Indie Flower', cursive;
+font-family: 'Baloo Tammudu', cursive;
+*/
+#contenidos{
+	width: 1100px;
+	height: auto;
+	margin: auto;
+	position: relative;
+  /*background: gray;*/
+}
+img.imgLogo{
+	width: 347px;
+	height: 75px;
+	
+}
+
+img.imgFoto{
+	width: 150px;
+	height: 150px;
+	display:block;
+	margin:auto;
+	
+}
+img.imgOrdenar{
+	width: 90%;
+	height: 90%;
+	display:block;
+	margin:auto;
+}
+
+img.imgOrdenar:hover{ 
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5)
+}
+img.contador{
+	width: 100px;
+	height: 50px;
+	background: #005883;
+	border-radius: 10px;
+	alignment-adjust: after-edge;
+	float:right;
+	margin-right:20px;
+}
+#logogris{
+	width: 225;
+	height: 41;
+	margin: auto;
+	float: left;
+	position: static;
+  /*background: gray;*/
+}
+
+#topderecho{
+/*	position: relative;*/
+	font-family: "Franklin Gothic Heavy", "Franklin Gothic Book";
+	color: Black;
+	margin-Top: 20px;
+	margin-left: 20px;
+	font-size: 30px;
+	text-align: right;
+	height: 30px;
+	width: 700px;
+	float:right;
+	background: rgba(255,255,255,3,5);
+  
+}
+/*Etiquetas*/
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+h1{
+	font-family: "Franklin Gothic Heavy", "Franklin Gothic Book";
+	color: white;
+	margin-left: 20px;
+	font-size: 30px;
+	text-align: center;
+	height: 70px;
+	width: 700px;
+	float: right;
+	background: #005883;
+	padding-left: 30px;	
+	padding-rigth: 30px;	
+	padding-top: 10px;	
+	padding-bottom: 10px;
+} 
+h2{
+  font-family: 'Franklin Gothic Book', cursive;
+  color: Black;
+  margin-left:10px;
+  font-size:20px;
+  text-align: center;
+}
+h3{
+  font-family: 'Franklin Gothic Book', cursive;
+  color: white;
+  font-size:12px;
+  text-align: center;
+}
+header{
+	width: 1100px;
+	height: 133px;
+	background: rgba(255,255,255,3,5);
+  
+}
+nav{
+	width: 1100px;
+	height: 70px;
+	background: #005883;
+	border-radius: 10px;
+	alignment-adjust: after-edge;
+}
+
+ul{
+	margin: auto;
+	
+	padding-top: 4px;
+	margin-top: 10px;
+}
+li{
+	/*formato de menu */
+	float: left;
+	width: 90px;
+	list-style-type: none;
+	padding: 10px;
+	background: #F0B429;
+	margin-top: 12px;
+	border-radius: 15px 15px 0 0;
+	box-shadow: 0  0 10px white inset;
+	text-align: center;
+	
+}
+li.menu{
+	/*formato de menu */
+	background: #F47920;
+	border-radius: 15px 15px 0 0;
+}
+
+
+section{
+	width: 350px;
+	background: #dfdfdf;
+	height: 450px;
+	float: left;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+aside{
+	width: 350px;
+	background: red;
+	height: 450px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+.twitter-timeline{
+	width:50%;
+	background: blue;
+	height: 50%;
+	float: center;
+	border-radius: 10px;
+}
+footer{
+	width: 1100px;
+	height: 80px;
+	background: black;
+	float: left;
+	margin-top: 20px;
+	text-align: left;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+p{
+  font-size:15px;
+  font-weight: bolder;
+  line-height: 15px; /*alto de linea*/
+  padding: 10px;
+  text-align: justify;
+}
+p.textoTeoria{
+	font-family: "Franklin Gothic Book";
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 16px; /*alto de linea*/
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 1px;
+	text-align: justify;
+}
+/* Definimos las Clases */
+.ancho_menu_home{width: 700px;}
+.ancho_menu_paginas{width: 750px;}
+
+.menu:link{ color:white; text-decoration: none;}
+.menu:visited{ color:white; text-decoration: none;}
+.menu:hover{
+	color: #005883;
+	text-decoration: none;
+	text-shadow: 0 0 13px white;
+ 	
+ }
+.menu:active{
+	color: #005883;
+	text-decoration: none;
+	
+}
+
+header_texto {
+	font-family: "Franklin Gothic Heavy", "Franklin Gothic Book";
+}
+.footLogo {
+	margin-top: 5px;
+	width: 225px;
+	padding-left: 1.45%;
+	float: left;
+	text-align: left;
+
+}
+.footTexto {
+    width: 30%;
+	margin-left:20px;
+    float: left;
+    font-size: 12px;
+    text-align: left;
+    line-height: 14px;
+
+}
+.footContacto {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #FFF;
+    text-align: left;
+	font-size:9px;
+}
