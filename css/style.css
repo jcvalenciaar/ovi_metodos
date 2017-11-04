@@ -149,7 +149,7 @@ section{
 }
 aside{
 	width: 350px;
-	background: red;
+	background: white;
 	height: 450px;
 	float: left;
 	margin-left: 20px;
@@ -158,7 +158,7 @@ aside{
 }
 .twitter-timeline{
 	width:50%;
-	background: blue;
+	
 	height: 50%;
 	float: center;
 	border-radius: 10px;
